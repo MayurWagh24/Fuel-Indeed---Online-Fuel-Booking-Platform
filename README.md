@@ -20,6 +20,12 @@ Fuel Indeed is an online platform that simplifies fuel booking and delivery. It 
 - **Database**: MySQL
 - **Version Control**: Git
 
+## Screenshots
+![User](images/photos/user.png)
+![UserDashboard](images/photos/UserDashboard.png)
+![ViewFuelStation](images/photos/ViewFuelStation.png)
+![BookFuelStation](images/photos/BookFuelStation.png)
+
 ## Installation
 
 To run this project locally, follow these steps:
