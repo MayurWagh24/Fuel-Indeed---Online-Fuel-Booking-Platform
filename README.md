@@ -21,10 +21,10 @@ Fuel Indeed is an online platform that simplifies fuel booking and delivery. It 
 - **Version Control**: Git
 
 ## Screenshots
-![User](webcontent/images/photos/user.png)
-![UserDashboard](webcontent/images/photos/UserDashboard.png)
-![ViewFuelStation](webcontent/images/photos/ViewFuelStation.png)
-![BookFuelStation](webcontent/images/photos/BookFuelStation.png)
+![User](WebContent/images/photos/user.png)
+![UserDashboard](WebContent/images/photos/UserDashboard.png)
+![ViewFuelStation](WebContent/images/photos/ViewFuelStation.png)
+![BookFuelStation](WebContent/images/photos/BookFuelStation.png)
 
 ## Installation
 
