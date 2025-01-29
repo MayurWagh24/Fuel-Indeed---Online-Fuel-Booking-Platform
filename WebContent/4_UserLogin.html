@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Responsive Admin &amp; Dashboard Template based on Bootstrap 5">
+	<meta name="author" content="AdminKit">
+	<meta name="keywords" content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="shortcut icon" href="img/icons/icon-48x48.png" />
+
+	<title>User Login | Fuel Indeed</title>
+
+	<link href="css/app.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+	<style>
+		/* Background styling */
+		body {
+			background-image: url('img/photos/Fuel Login Page Background Image.webp');
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed;
+			color: #f8f9fa;
+		}
+
+		/* Card styling */
+		.card {
+			border-radius: 12px;
+			box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+			background-color: rgba(0, 0, 0, 0.7);
+		}
+
+		.card-body {
+			border-radius: 12px;
+			padding: 2rem;
+		}
+
+		/* Transparent input fields */
+		.form-control {
+			background-color: rgba(255, 255, 255, 0.1);
+			color: #f8f9fa;
+			border: 1px solid rgba(255, 255, 255, 0.5);
+			border-radius: 8px;
+		}
+
+		.form-control::placeholder {
+			color: rgba(255, 255, 255, 0.7);
+		}
+
+		.form-control:focus {
+			background-color: rgba(255, 255, 255, 0.2);
+			color: #fff;
+			border-color: #00d9ff;
+			box-shadow: 0 0 8px rgba(0, 217, 255, 0.8);
+		}
+
+		/* Buttons */
+		.btn-primary {
+			background: linear-gradient(45deg, #00d9ff, #0056b3);
+			border: none;
+			color: #fff;
+		}
+
+		.btn-primary:hover {
+			background: linear-gradient(45deg, #0056b3, #003f7f);
+		}
+
+		/* Links */
+		.register-link {
+			color: #00d9ff;
+			text-decoration: none;
+			font-weight: bold;
+			transition: color 0.3s ease-in-out;
+		}
+
+		.register-link:hover {
+			color: #ffffff;
+			text-decoration: underline;
+		}
+
+		/* Heading Styling */
+		h1 {
+			font-weight: bold;
+			color: #00d9ff;
+			text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
+		}
+
+		/* Subtitle Styling */
+		.lead {
+			font-size: 1.5rem;
+			color: #ffffff;
+			text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
+		}
+	</style>
+</head>
+
+<body>
+	<main class="d-flex w-100">
+		<div class="container d-flex flex-column">
+			<div class="row vh-100">
+				<div class="col-sm-10 col-md-8 col-lg-6 mx-auto d-table h-100">
+					<div class="d-table-cell align-middle">
+
+						<div class="text-center mt-4">
+							<h1>User Login</h1>
+							<p class="lead">
+								<strong>Log in to your account to continue</strong>
+							</p>
+						</div>
+
+						<div class="card">
+							<div class="card-body">
+								<div class="m-sm-4">
+									<div class="text-center">
+										<img src="img/avatars/admin.jfif" alt="User Avatar" class="img-fluid rounded-circle" width="132" height="132" />
+									</div>
+									<form action="UserLogin" method="post">
+										<div class="mb-3">
+											<label class="form-label">Email</label>
+											<input class="form-control form-control-lg" type="email" name="email" placeholder="Enter your Email" />
+										</div>
+										<div class="mb-3">
+											<label class="form-label">Password</label>
+											<input class="form-control form-control-lg" type="password" name="password" placeholder="Enter your password" />
+										</div>
+										<div>
+											<label class="form-check">
+												<input class="form-check-input" type="checkbox" value="remember-me" name="remember-me" checked>
+												<span class="form-check-label">
+													Remember me next time
+												</span>
+											</label>
+										</div>
+										<div class="text-center mt-3 w-100">
+											<button type="submit" class="w-100 btn btn-lg btn-primary">Log in</button>
+										</div>
+										<div class="mb-3 mt-2 text-center">
+											<b>
+												<span style="color: #ffffff; font-size: 1.1rem;">
+													Are you a New User? 
+													<a href="4_UserRegister.html" class="register-link">
+														Register here
+													</a>
+												</span>
+											</b>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Responsive Admin & Dashboard Template based on Bootstrap 5">
+    <meta name="author" content="AdminKit">
+    <meta name="keywords" content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="img/icons/icon-48x48.png" />
+
+    <title>User Register</title>
+
+    <link href="css/app.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* Background styling */
+        body {
+            background-image: url('img/photos/Fuel Login Page Background Image.webp');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #f8f9fa;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Transparent card styling */
+        .card {
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for the card */
+            border: none;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+            max-width: 900px;
+            width: 100%;
+            border-radius: 15px;
+        }
+
+        .card-body {
+            padding: 2rem;
+            background-color: rgba(0, 0, 0, 0.6); /* Dark background for contrast */
+            border-radius: 10px;
+        }
+
+        /* Transparent input fields */
+        .transparent-input {
+            background-color: rgba(255, 255, 255, 0.1); /* Transparent background */
+            color: #f8f9fa; /* Light text color */
+            border: 1px solid rgba(255, 255, 255, 0.5); /* Transparent border */
+            border-radius: 8px; /* Rounded corners */
+            padding: 10px;
+        }
+
+        .transparent-input::placeholder {
+            color: rgba(255, 255, 255, 0.7); /* Lighter placeholder text */
+        }
+
+        .transparent-input:focus {
+            background-color: rgba(255, 255, 255, 0.2); /* Slightly darker on focus */
+            color: #fff;
+            border-color: #00d9ff; /* Highlight the border on focus */
+            box-shadow: 0 0 8px rgba(0, 217, 255, 0.8); /* Glowing effect on focus */
+        }
+
+        /* Button styling */
+        .btn-primary {
+            background: linear-gradient(45deg, #00d9ff, #0056b3);
+            border: none;
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(45deg, #0056b3, #003f7f);
+        }
+
+        /* Heading and subtitle styling */
+        h1 {
+            font-weight: bold;
+            color: #00d9ff;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.9);
+        }
+
+        .lead {
+            font-size: 1.5rem;
+            color: #ffffff;
+            text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="d-flex w-100">
+        <div class="container d-flex flex-column">
+            <div class="row vh-100">
+                <div class="col-sm-10 col-md-9 col-lg-8 mx-auto d-table h-100">
+                    <div class="d-table-cell align-middle">
+                        <div class="card p-0">
+                            <div class="card-body p-0">
+                                <div class="text-center mt-4">
+                                    <h1 class="h2">Register</h1>
+                                </div>
+                                <main class="content pt-1">
+                                    <div class="container-fluid p-0">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <form action="UserRegister" method="post">
+                                                    <div class="card-body">
+                                                        <div class="form-group">
+                                                            <label class="mb-2" for="name">Enter Your Name</label>
+                                                            <input type="text" name="name" class="form-control transparent-input" id="name" placeholder="Enter Your Name" required>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="mb-2" for="city">Enter the City</label>
+                                                            <input type="text" name="city" class="form-control transparent-input" id="city" placeholder="Enter the city">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="mb-2" for="number">Enter the Contact</label>
+                                                            <input type="text" name="number" class="form-control transparent-input" id="number" placeholder="Enter the Contact">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="mb-2" for="address">Enter the Address</label>
+                                                            <textarea type="text" name="address" class="form-control transparent-input" id="address" placeholder="Enter the Address" required></textarea>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="mb-2" for="pincode">Enter the pincode</label>
+                                                            <input type="text" name="pincode" class="form-control transparent-input" id="pincode" placeholder="Enter the pincode">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="mb-2" for="email">Enter the Email</label>
+                                                            <input type="text" name="email" class="form-control transparent-input" id="email" placeholder="Enter the Email">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label class="mb-2" for="password">Enter the Password</label>
+                                                            <input type="text" name="password" class="form-control transparent-input" id="password" placeholder="Enter the Password">
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-action">
+                                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                                        <button type="reset" class="btn btn-warning">Reset</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </main>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        var form = document.getElementById('registerForm');
+
+        function showAlert(event) {
+            event.preventDefault();
+            swal({
+                title: "Registered!",
+                text: "Registered Successfully!",
+                icon: "success",
+            });
+            form.reset();
+        }
+        form.addEventListener('submit', showAlert);
+    </script>
+
+</body>
+
+</html>

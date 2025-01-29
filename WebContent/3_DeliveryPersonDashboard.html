@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Responsive Admin & Dashboard Template based on Bootstrap 5">
+    <meta name="author" content="AdminKit">
+    <meta name="keywords" content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="shortcut icon" href="img/icons/icon-48x48.png" />
+    <link href="css/app.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <title>Delivery Person Dashboard | Fuel Indeed</title>
+
+    <style>
+        body {
+            background-image: url('img/photos/Fuel_Login_Page_Background_Image.webp');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #f8f9fa;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .card {
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .dashboard-boxes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .dashboard-box {
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 12px;
+            padding: 20px;
+            flex: 1;
+            max-width: 48%;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .dashboard-box:hover {
+            transform: translateY(-10px);
+            background-color: rgba(0, 217, 255, 0.2);
+        }
+
+        .dashboard-box a {
+            color: #00d9ff;
+            font-size: 20px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .dashboard-box a:hover {
+            text-decoration: underline;
+        }
+
+        .sidebar {
+            background-color: #343a40;
+            padding: 20px;
+            height: 100vh;
+            color: #00d9ff;
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            Delivery Person Dashboard
+        </div>
+        <div class="main">
+            <nav class="navbar navbar-expand navbar-light navbar-bg">
+                <a class="sidebar-toggle js-sidebar-toggle">
+                    <i class="hamburger align-self-center"></i>
+                </a>
+
+                <div class="navbar-collapse collapse">
+                    <ul class="navbar-nav navbar-align">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="3_DeliveryPersonLogin.html" data-bs-toggle="dropdown">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUyqEDp_ogPSU7wiVutAR54QRjfOovbpS8Wg&usqp=CAU" class="avatar img-fluid rounded me-1" alt="Delivery Person" /> <span class="text-dark">Log Out</span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end"></div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main class="content">
+                <div class="container-fluid p-0">
+                    <div class="mb-3">
+                        <h1 class="h3 d-inline align-middle">Delivery Person Dashboard</h1>
+                    </div>
+
+                    <div class="dashboard-boxes">
+                        <div class="dashboard-box">
+                            <a href="3_ViewAssignedBookings.jsp">View Assigned Bookings</a>
+                        </div>
+                        <div class="dashboard-box">
+                            <a href="3_ChangeDeliveryPersonPassword.html">Change Password</a>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row text-muted">
+                        <div class="col-6 text-start">
+                            <p class="mb-0">
+                                <a class="text-muted" href="https://adminkit.io/" target="_blank"><strong>Delivery Dashboard</strong></a> &copy;
+                            </p>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

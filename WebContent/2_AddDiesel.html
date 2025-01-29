@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Diesel</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url('img/photos/Fuel Login Page Background Image.webp'); 
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    form {
+        width: 300px;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.8); 
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        text-align: center;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    input[type="number"] {
+        width: calc(100% - 20px);
+        padding: 8px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    button {
+        width: 100px;
+        padding: 10px;
+        background-color: #007bff;
+        border: none;
+        border-radius: 4px;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        margin: 5px;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    .back-button {
+        background-color: #6c757d;
+    }
+
+    .back-button:hover {
+        background-color: #5a6268;
+    }
+    .message {
+            margin: 20px auto;
+            padding: 10px;
+            max-width: 400px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background-color: #28a745;
+            border-radius: 4px;
+        }
+</style>
+</head>
+<body>
+    <form action="AddDiesel" method="post">
+        <label for="dieselQuantity">Enter Diesel Quantity:</label>
+        <input type="number" id="dieselQuantity" name="dquantity" min="0" required>
+        <div>
+            <button type="submit">Submit</button>
+            <button type="button" class="back-button" onclick="location.href='2_UpdateFuelAvailability.html';">Back</button>
+        </div>
+         <div class="message">
+        <script>
+            const params = new URLSearchParams(window.location.search);
+            const message = params.get("message");
+            if (message) {
+                document.write(message);
+            }
+        </script>
+    </div>
+    </form>
+</body>
+</html>
